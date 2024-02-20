@@ -42,7 +42,7 @@ def calculate_grades(names, marks, total):
   labels = [f'Passed\n{subjects_passed}', f'Failed\n{subjects_failed}']
   sizes = [subjects_passed, subjects_failed]
   colors = ['lightgreen', 'lightcoral']
-  explode = (0.1, 0)  # Explode the 'Passed' slice slightly
+  explode = (0.1, 0)
 
   plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90, wedgeprops=dict(edgecolor='black'))
 
